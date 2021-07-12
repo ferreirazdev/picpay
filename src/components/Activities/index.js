@@ -10,7 +10,17 @@ import {
   CardHeader,
   Avatar,
   Description,
-  Bold
+  Bold,
+  CardBody,
+  UserName,
+  CardFooter,
+  Details,
+  Value,
+  Divider,
+  Date,
+  Actions,
+  Option,
+  OptionLabel,
 } from './styles';
 
 import avatar from '../../images/avatar.png';
@@ -29,6 +39,33 @@ export default function Activities(){
            <Bold>Você</Bold> pagou a <Bold>@flavioferreiraz</Bold>
           </Description>
         </CardHeader>
+
+        <CardBody>
+          <UserName>Flávio Ferreira</UserName>
+        </CardBody>
+
+        <CardFooter>
+          <Details>
+            <Value>R$300,00</Value>
+
+            <Divider />
+
+            <Feather name="lock" color="#fff" size={14} />
+            <Date>2 meses atrás</Date>
+          </Details>
+
+          <Actions>
+            <Option>
+              <MaterialCommunityIcons name="comment-outline" size={14} color="#fff" />
+              <OptionLabel>0</OptionLabel>
+            </Option>
+
+            <Option>
+              <AntDesign name="hearto" size={14} color="#fff" />
+              <OptionLabel>0</OptionLabel>
+            </Option>
+          </Actions>
+        </CardFooter>
 
 
       </Card>
