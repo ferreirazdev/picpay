@@ -5,6 +5,7 @@ import { MaterialCommunityIcons, AntDesign } from '@expo/vector-icons';
 import { Wrapper, Container, Header, BalanceContainer, BalanceTitle, Balance } from './styles';
 
 import Suggestions from '../../components/Suggestions';
+import Activities from '../../components/Activities';
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         </Header>
 
         <Suggestions />
+        <Activities />
       </Container>
     </Wrapper>
   );
