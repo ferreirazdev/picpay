@@ -6,6 +6,11 @@ import {
   Container,
   Header,
   Title,
+  Card,
+  CardHeader,
+  Avatar,
+  Description,
+  Bold
 } from './styles';
 
 import avatar from '../../images/avatar.png';
@@ -16,6 +21,17 @@ export default function Activities(){
       <Header>
         <Title>Atividades</Title>
       </Header>
+
+      <Card>
+        <CardHeader>
+          <Avatar source={avatar}/>
+          <Description>
+           <Bold>Você</Bold> pagou a <Bold>@flavioferreiraz</Bold>
+          </Description>
+        </CardHeader>
+
+
+      </Card>
 
 
     </Container>
